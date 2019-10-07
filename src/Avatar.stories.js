@@ -7,7 +7,9 @@ export default {
   title: "Design System|Avatar",
 
   parameters: {
-    component: Avatar
+    component: Avatar,
+    componentSubtitle:
+      "Displays an image that represents a user or organization"
   }
 };
 
@@ -52,6 +54,13 @@ export const sizes = () => (
     />
   </div>
 );
+
+// By default, every Avatar story is rendered in the docs. We can’t
+// assume other developers know what each story represents. Write
+// some descriptive text for the stories in src/Avatar.stories.js:
+sizes.story = {
+  parameters: { docs: { storyDescription: "4 sizes are supported." } }
+};
 
 export const initials = () => (
   <div>
