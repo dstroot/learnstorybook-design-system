@@ -3,6 +3,14 @@ This project was bootstrapped with [Create React App](https://github.com/faceboo
 https://www.learnstorybook.com/design-systems-for-developers/react/en/document/
 https://github.com/chromaui/learnstorybook.com/
 
+# The Learn Storybook design system
+
+The Learn Storybook design system is a subset of the full [Storybook design system](https://github.com/storybookjs/design-system/), created as a learning resource for those interested in learning how to write and publish a design system using best in practice techniques.
+
+Learn more at [Learn Storybook](https://learnstorybook.com).
+
+Auto is a command line tool we can use for various common tasks around release management. You can learn more about Auto on their [documentation site](https://intuit.github.io/auto/).
+
 ## Available Scripts
 
 In the project directory, you can run:
