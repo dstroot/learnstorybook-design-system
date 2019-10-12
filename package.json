@@ -1,5 +1,5 @@
 {
-  "name": "react-design-system",
+  "name": "@dstroot/react-design-system",
   "version": "0.1.0",
   "private": false,
   "dependencies": {
@@ -57,7 +57,18 @@
   },
   "description": "React Components",
   "main": "dist/index.js",
-  "repository": "https://github.com/dstroot/learnstorybook-design-system.git",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/dstroot/learnstorybook-design-system.git"
+  },
   "author": "Dan Stroot <dan.stroot@gmail.com>",
-  "license": "MIT"
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/dstroot/learnstorybook-design-system/issues"
+  },
+  "homepage": "https://github.com/dstroot/learnstorybook-design-system#readme",
+  "keywords": [
+    "react",
+    "components"
+  ]
 }
