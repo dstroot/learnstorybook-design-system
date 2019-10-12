@@ -1,5 +1,5 @@
 {
-  "name": "learnstorybook-design-system",
+  "name": "react-design-system",
   "version": "0.1.0",
   "private": false,
   "dependencies": {
@@ -55,7 +55,7 @@
       "react-app"
     ]
   },
-  "description": "Learn Storybook Design System",
+  "description": "React Components",
   "main": "dist/index.js",
   "repository": "https://github.com/dstroot/learnstorybook-design-system.git",
   "author": "Dan Stroot <dan.stroot@gmail.com>",
