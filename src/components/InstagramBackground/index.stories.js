@@ -64,7 +64,7 @@ const Title = styled.h1`
   font-size: 4em;
   color: white;
   font-weight: 300;
-  line-hieght: 1.1em;
+  line-height: 1;
 `;
 
 const Lead = styled.p`
