@@ -1,8 +1,12 @@
 import React from "react";
 import styled from "styled-components";
 
+// storybook addons
+// import { Meta, Story, Props, Preview } from "@storybook/addon-docs/blocks";
+// import { withKnobs, select, boolean } from "@storybook/addon-knobs";
+
 // components
-import InstagramBackground from "../InstagramBackground";
+import InstagramBackground from ".";
 
 export default {
   title: "Pac Life/Instagram Background",
@@ -15,6 +19,7 @@ export const example = () => {
       <InstagramBackground
         username="ferrytalecreative"
         filterOpts={["to bottom right", "teal", "blue", "purple"]}
+        // filterOpts={["to bottom right", "maroon", "orange", "yellow"]}
       />
       <Fence>
         <Splash>

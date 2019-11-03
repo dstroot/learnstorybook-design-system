@@ -1,10 +1,10 @@
-import React from 'react';
-import { Badge } from './Badge';
-import { Icon } from './Icon';
+import React from "react";
+import { Badge } from "../Badge";
+import { Icon } from "../Icon";
 
 export default {
-  title: 'Design System|Badge',
-  component: Badge,
+  title: "Design System|Badge",
+  component: Badge
 };
 
 export const allBadges = () => (
@@ -22,7 +22,7 @@ export const allBadges = () => (
 );
 
 allBadges.story = {
-  name: 'all badges',
+  name: "all badges"
 };
 
 export const positive = () => <Badge status="positive">Positive</Badge>;
@@ -39,5 +39,5 @@ export const withIcon = () => (
 );
 
 withIcon.story = {
-  name: 'with icon',
+  name: "with icon"
 };
