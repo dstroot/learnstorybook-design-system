@@ -1,0 +1,46 @@
+import { Meta, Story, Props, Preview } from "@storybook/addon-docs/blocks";
+import { withKnobs, array } from "@storybook/addon-knobs";
+
+import { BackgroundWash } from ".";
+
+<Meta title="Design System|BackgroundWash" component={BackgroundWash} />
+
+# BackgroundWash
+
+## Displays an image that represents a user or organization
+
+Use an BackgroundWash for attributing actions or content to specific users. The user's name should _always_ be present when using BackgroundWash – either printed beside the BackgroundWash or in a tooltip.
+
+### BackgroundWash Properties
+
+<Props of={BackgroundWash} />
+
+## Usage
+
+BackgroundWash is used to represent a person or an organization. By default the BackgroundWash shows an image and gracefully falls back to the first initial of the username. While hydrating the component you may find it useful to render a skeleton template to indicate that BackgroundWash is awaiting data. BackgroundWashs can be grouped with the BackgroundWashList component.
+
+### Sizes
+
+4 sizes are supported.
+
+<Story name="sizes">
+  <div>
+    <BackgroundWash
+      filterOpts={["to bottom right", "teal", "blue", "purple"]}
+    />
+  </div>
+</Story>
+
+### Default Values
+
+When no image is supplied to the `src` prop, Avatar displays initials. Avatar should be used sparingly in situations without access to images.
+
+### Playground
+
+Experiment with this story with Knobs addon in Canvas mode.
+
+<Story name="knobs" decorators="withKnobs">
+  <BackgroundWash
+    filterOpts={array("options", ["to bottom right", "teal", "blue", "purple"])}
+  />
+</Story>
