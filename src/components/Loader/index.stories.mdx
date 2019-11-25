@@ -1,0 +1,48 @@
+import { Meta, Story, Preview } from "@storybook/addon-docs/blocks";
+
+import { Loader } from ".";
+
+<Meta title="MDX/Loader" component={Loader} />
+
+# Loader
+
+Let's define a story for our `Loader` component:
+
+<Story name="default">
+  <Loader />
+</Story>
+
+Sizes
+
+<Preview>
+  <Story name="large">
+    <Loader color="#1089ff" height={100} width={100} />
+  </Story>
+  <Story name="medium">
+    <Loader color="#1089ff" height={50} width={50} />
+  </Story>
+  <Story name="small">
+    <Loader color="#1089ff" height={25} width={25} />
+  </Story>
+  <Story name="tiny">
+    <Loader color="#1089ff" height={10} width={10} />
+  </Story>
+</Preview>
+
+We can drop it in a `Preview` to get a code snippet:
+
+<Preview>
+  <Story name="blue">
+    <Loader color="#1089ff" height={100} width={100} />
+  </Story>
+  <Story name="orange">
+    <Loader color="orange" height={100} width={100} />
+  </Story>
+  <Story name="red">
+    <Loader color="red" height={100} width={100} />
+  </Story>
+</Preview>
+
+We can even preview multiple stories in a block. This
+gets rendered as a group, but defines individual stories
+with unique URLs and isolated snapshot tests.

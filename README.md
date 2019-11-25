@@ -11,6 +11,9 @@ Learn more at [Learn Storybook](https://learnstorybook.com).
 
 Auto is a command line tool we can use for various common tasks around release management. You can learn more about Auto on their [documentation site](https://intuit.github.io/auto/).
 
+Storybook Docs MDX: 
+https://github.com/storybookjs/storybook/blob/next/addons/docs/docs/mdx.md 
+
 ## Available Scripts
 
 In the project directory, you can run:
