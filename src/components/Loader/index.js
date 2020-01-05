@@ -29,8 +29,17 @@ export const Loader = props => (
 );
 
 Loader.propTypes = {
+  /**
+    Height is a number in pixels
+    */
   height: PropTypes.number,
+  /**
+    Width is a number in pixels
+    */
   width: PropTypes.number,
+  /**
+    Color is a string
+    */
   color: PropTypes.string,
   label: PropTypes.string
 };
