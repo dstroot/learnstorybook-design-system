@@ -22,7 +22,7 @@ exports[`renders 1`] = `
           cx="18"
           cy="18"
           r="18"
-          stroke-opacity=".5"
+          stroke-opacity=".2"
         />
         <path
           d="M36 18c0-9.94-8.06-18-18-18"
