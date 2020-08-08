@@ -1,0 +1,124 @@
+$section-background-color: #ff583f;
+
+body {
+  margin: 0;
+  background: $section-background-color;
+}
+
+.parallax-items {
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  padding: 6vw;
+}
+
+.substantiation-button {
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  bottom: 2vh;
+  border: none;
+  background: none;
+  color: #fff;
+  font-size: calc(1rem + 1vw);
+  font-weight: 700;
+  opacity: 0.5;
+}
+
+// keep content on large screens limited to 1200px wide
+.wrapper {
+  margin: auto;
+  max-width: 1200px;
+  overflow: hidden;
+}
+
+.flex-container-vert {
+  display: flex;
+  flex-direction: column; // vertical
+  height: 100vh;
+  width: 100vw;
+  align-items: center; // flex-start center
+  @media screen and (min-width: 640px) {
+    flex-direction: row; // horizonal
+  }
+}
+
+.flex-item-vert {
+  padding: 7vw;
+  flex-basis: 50%;
+  justify-content: stretch;
+  position: relative;
+  h1 {
+    color: #fff;
+    font-size: calc(3rem + 1.5vw);
+    font-weight: 700;
+    line-height: 1.2;
+  }
+  h2 {
+    color: #fff;
+    font-size: calc(2rem + 1vw);
+    font-weight: 700;
+    line-height: 1.2;
+  }
+}
+
+.flex-container-horiz {
+  display: flex;
+  flex-direction: column; // vertical
+  height: 100vh;
+  width: 100vw;
+}
+
+.flex-item-horiz {
+  padding: 7vw;
+  height: 50vh;
+  position: relative;
+  h2 {
+    color: #fff;
+    font-size: calc(2rem + 1vw);
+    font-weight: 700;
+    line-height: 1.2;
+  }
+  img.wind {
+    max-width: 30vw;
+    bottom: 10vh;
+    position: absolute;
+    left: 57vw;
+  }
+  img.drink-tahoe-tap {
+    width: 34vw;
+  }
+  .mountains {
+    position: absolute;
+    max-width: 75vw;
+    bottom: -3vh;
+    left: 45vw;
+  }
+  .parallax-items {
+    z-index: -1;
+    & > * {
+      z-index: 1;
+    }
+    .clouds {
+      position: absolute;
+      width: 50vw;
+      top: 5vh;
+      left: -25vw;
+    }
+    .right-microplastic {
+      width: 14vw;
+      -webkit-transform: rotateZ(0);
+      -ms-transform: rotate(0);
+      transform: rotateZ(0);
+      position: absolute;
+      top: 50vh;
+      left: 40vw;
+    }
+  }
+}
+
+svg {
+  width: 100%;
+}

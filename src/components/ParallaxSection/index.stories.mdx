@@ -1,0 +1,23 @@
+import { Meta, Story, Preview } from "@storybook/addon-docs/blocks";
+
+import ParallaxSection from ".";
+
+<Meta title="MDX/Parallax" component={ParallaxSection} />
+
+# Loader
+
+Let's define a story for our `Loader` component:
+
+<Story name="default">
+  <ParallaxSection />
+</Story>
+
+### Props
+
+<Props of={ParallaxSection} />
+
+### Sizes
+
+We can even preview multiple stories in a block. This
+gets rendered as a group, but defines individual stories
+with unique URLs and isolated snapshot tests.
