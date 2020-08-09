@@ -1,11 +1,23 @@
 import React, { useEffect } from "react";
 import Rellax from "rellax";
-import "./minimal.scss"; // Import  stylesheet
+import "./minimal.scss";
 
-//images
+// section 1
+import Microplastics from "./assets/Scruffs_blue-only-microplastics.svg";
 import { ReactComponent as Scruffs } from "./assets/Scruffs_blue-no-microplastics.svg";
-// import { ReactComponent as Wind } from "./assets/Wind-Gust.svg";
-// import Mountains from "./assets/Mountains_WhiteSnow-only-mountains.svg";
+
+// section 2
+import Wind from "./assets/Wind-Gust.svg";
+
+// section 3
+import BottleSide from "./assets/Scruffs_side-no-microplastics.svg";
+import Microplastics2 from "./assets/Scruffs_microplastics-only.svg";
+
+// section 4
+import Mountains from "./assets/Mountains_WhiteSnow-only-mountains.svg";
+import Clouds from "./assets/Clouds.svg";
+import Ripples from "./assets/Water-Ripples.svg";
+import Drink from "./assets/Drink-Tahoe-Tap.svg";
 
 const ParallaxSection = () => {
   // create rellax instance
@@ -31,8 +43,8 @@ const ParallaxSection = () => {
           <div className="parallax-items animate" data-rellax-speed={3}>
             <img
               className="microplastics"
-              src="https://takecaretahoe.org/wp-content/themes/adam/images/campaign/Scruffs_blue-only-microplastics.svg"
-              alt=""
+              src={Microplastics}
+              alt="microplastics"
             />
           </div>
         </div>
@@ -71,11 +83,7 @@ const ParallaxSection = () => {
             // data-rellax-min-y=
             // data-rellax-max-y=
           >
-            <img
-              className="wind"
-              src="https://takecaretahoe.org/wp-content/themes/adam/images/campaign/Wind-Gust.svg"
-              alt=""
-            ></img>
+            <img className="wind" src={Wind} alt="wind"></img>
           </div>
         </div>
       </div>
@@ -93,8 +101,8 @@ const ParallaxSection = () => {
           <img
             className="scruffs"
             style={{ width: `100%` }}
-            src="https://takecaretahoe.org/wp-content/themes/adam/images/campaign/Scruffs_woMicroplastics.svg"
-            alt=""
+            src={BottleSide}
+            alt="bottle on side"
           />
           <div
             className="parallax-items animate"
@@ -107,50 +115,31 @@ const ParallaxSection = () => {
             <img
               className="microplastics"
               style={{ width: `100%` }}
-              src="https://takecaretahoe.org/wp-content/themes/adam/images/campaign/Scruffs_microplastics-only.svg"
+              src={Microplastics2}
               alt=""
             />
           </div>
         </div>
       </div>
 
+      {/* SECTION FOUR */}
       <div class="flex-container-horiz wrapper">
-        <div
-          class="flex-item-horiz"
-          style={{
-            background: `#fff`,
-            // background: `url("./Mountains_WhiteSnow-only-mountains.svg") no- repeat`,
-            // backgroundSize: `cover`,
-            // backgroundPosition: `bottom -25px`,
-            // backgroundPosition: `bottom -18vh right -27vw`,
-          }}
-        >
+        <div class="flex-item-horiz" style={{ background: `#fff` }}>
           <div
             className="parallax-items animate"
             data-rellax-horizontal-speed={5}
           >
-            <img
-              className="clouds"
-              src="https://takecaretahoe.org/wp-content/themes/adam/images/campaign/Clouds.svg"
-              alt=""
-            />
+            <img className="clouds" src={Clouds} alt="clouds" />
           </div>
           <img
             className="drink-tahoe-tap"
-            src="https://takecaretahoe.org/wp-content/themes/adam/images/campaign//Drink%20Tahoe%20Tap-2c.svg"
-            alt=""
+            src={Drink}
+            alt="drink tahoe water"
           />
-          <img
-            className="mountains"
-            src="https://takecaretahoe.org/wp-content/themes/adam/images/campaign/Mountains_WhiteSnow-only-mountains.svg"
-            alt=""
-          />
+          <img className="mountains" src={Mountains} alt="mountains" />
         </div>
         <div class="flex-item-horiz" style={{ background: `#74ccd8` }}>
-          <img
-            src="https://takecaretahoe.org/wp-content/themes/adam/images/campaign/Water-Ripples.svg"
-            alt=""
-          />
+          <img src={Ripples} alt="water ripples" style={{ width: `100%` }} />
         </div>
       </div>
     </>
